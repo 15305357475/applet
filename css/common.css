@@ -1,0 +1,157 @@
+/*公共样式*/
+i {
+	font-style: normal;
+}
+
+ul,
+li {
+	list-style: none;
+}
+	page {
+		background-color: #FFFFFF;
+		font-size: 30rpx;
+		color: #272e2d;
+		font-family: 'microsoft yahei';
+	}
+	view,
+	scroll-view,
+	swiper,
+	button,
+	input,
+	textarea,
+	label,
+	navigator,
+	image {
+		box-sizing: border-box;
+	}
+	/*按扭样式*/
+	.login-btn {
+		height: 82rpx;
+		border-radius: 41rpx;
+		background-color: #3c9cff;
+		box-shadow: -1px 5px 6px 0px rgba(31, 149, 240, 0.4);
+		text-align: center;
+		line-height: 82rpx;
+		font-size: 36rpx;
+		font-weight: 500;
+		color: #fff;
+	}
+
+/*不出现横向滚动条start*/
+:root {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.red {
+	color: #f56c6c;
+}
+
+/*分页*/
+.pagination {
+	width: 100%;
+	margin: 5px auto;
+	height: 40px;
+	line-height: 40px;
+	font-size: .25rem;
+	padding-left: .5rem;
+}
+
+.pagination li {
+	float: left;
+	width: 10%;
+}
+
+/*防止页面加载时出现 vuejs 的变量名*/
+[v-cloak] {
+	display: none !important;
+}
+
+.floatr {
+	float: right;
+}
+
+.floatl {
+	float: left;
+}
+
+
+.blue {
+	color: #208dfd;
+}
+
+.gray {
+	color: #d8d8d8;
+}
+
+.mini-button {
+	width: 50rpx;
+	margin: 0 15rpx;
+}
+.padding30 {
+	padding: 0rpx 30rpx;
+}
+
+/*clear*/
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.title-bg {
+	width: 100%;
+	margin:0rpx auto 30rpx;
+	background: #ecf8ff;
+	font-size: 30rpx;
+	font-weight: 600;
+	color: #5e6d82;
+	/* border-bottom: 2px solid #50bfff; */
+	height: 80rpx;
+	line-height:60rpx;
+	padding: 10rpx 30rpx;
+}
+
+
+/*弹出窗口*/
+/deep/.u-modal{z-index:999;}
+/deep/.u-modal__title{
+	text-align: left !important;
+	padding-left:20rpx;
+}
+/deep/.u-modal__content {
+	padding: 0rpx 10rpx;
+	flex-direction: column;
+}
+/*关闭*/
+.close-style{position: absolute;top:40rpx;right:30rpx;float:right;}
+/*表单*/
+/deep/.u-form-item,
+/deep/.u-form-item__body__left__content__label {
+	color: #666 !important;
+}
+/deep/ .u-input./deep/.u-textarea{background:white !important;}
+
+.borderline {
+	border-bottom: 1px solid #e6e6e6;
+	margin: 20rpx 0;
+}
+
+/*卡片样式*/
+.box-card {
+    border-radius: 4px;
+    border: 1px solid #ebeef5;
+	padding:30rpx;
+    background-color: #fff;
+    overflow: hidden;
+    color: #303133;
+    transition: .3s;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+	}
+

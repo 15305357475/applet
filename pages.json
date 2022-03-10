@@ -1,0 +1,78 @@
+{
+	"easycom": {
+		// npm安装的方式不需要前面的"@/"，下载安装的方式需要"@/"
+		// npm安装方式
+		// "^u-(.*)": "uview-u/components/u-$1/u-$1.vue"
+		// 下载安装方式
+		// "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/first/first",
+			"style": {
+				 "navigationStyle": "custom" //去掉头部
+				// "navigationBarTitleText": "引导页",
+				// "enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/index/index",
+			"style": {
+				 "navigationStyle": "custom" //去掉头部
+				 // "navigationBarTitleText": "首页"
+				// "enablePullDownRefresh": false
+			}
+		}, 
+		{
+			"path": "pages/login/login",
+			"style": {
+				// "navigationBarTitleText": "用户登录"
+				"navigationStyle": "default"
+			}
+		},
+		{
+            "path" : "pages/register/register",
+            "style" :                                                                                    
+            {
+                // "navigationBarTitleText": "用户注册",
+                "enablePullDownRefresh": false,
+				 "navigationStyle": "custom" //去掉头部
+            }
+            
+        }
+        ,{
+            "path" : "pages/report/report",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "隐患举报",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/report/reportList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "举报列表",
+		        "enablePullDownRefresh": false,
+				"onReachBottomDistance":20 //距离底部多远时触发 单位px
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/report/reportDetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "举报详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "云上北船",
+		"navigationBarBackgroundColor": "#208dfd",
+		"backgroundColor": "#208dfd"
+	}
+}
